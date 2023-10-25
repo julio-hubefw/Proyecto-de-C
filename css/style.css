@@ -1,0 +1,51 @@
+/* Estilo para agregar sombra a un elemento */
+.box-shadow{
+    box-shadow: 1px 1px 11px 4px rgba(97,92,92,0.74);
+    -webkit-box-shadow: 1px 1px 11px 4px rgba(97,92,92,0.74);
+    -moz-box-shadow: 1px 1px 11px 4px rgba(97,92,92,0.74);
+}
+
+/* Estilo para etiquetas de formulario con tamaño de fuente grande */
+.lb-form{
+    font-size: 1.5rem;
+}
+
+/* Fondo gris con opacidad */
+.bg-gray{
+    background-color: rgba(236, 233, 233, 0.74);
+}
+
+/* Estilo para el fondo con una imagen */
+.fondo{
+    background-image: url(../img/pokemonBank.jpg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Contenedor principal de la página */
+.contenedor-main{
+    height: 45vh;
+}
+
+/* Estilo para el pie de página */
+footer{
+    height: 5vh;
+}
+
+/* Cursor de tipo puntero para elementos con la clase "pagar" */
+.pagar{
+    cursor: pointer;
+}
+
+/* Estilo para una lista con desplazamiento vertical */
+.transacList{
+    height: 60%;
+    overflow-y: scroll;
+}
+
+/* Estilo para el elemento con el id "acquisitions" */
+#acquisitions {
+    max-height: 50%;
+}

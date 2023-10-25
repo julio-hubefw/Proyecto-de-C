@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlaces a las hojas de estilo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Título de la página -->
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Contenedor principal con fondo gris -->
+    <div class="container-fluid fondo">
+        <nav class="navbar navbar-light ">
+            <div class="container-fluid">
+                <p class="navbar-brand">
+                    <img src="img/user.jpg" width="30" height="24" class="d-inline-block align-text-top">
+                    <b>Julio - 0000033</b>
+                </p>
+                <a class="navbar-brand fw-bold" href="index.html">Cerrar sesión</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid bg-light contenedor-main">
+        <div class="row">
+            <div class="col-12 px-0 bg-gray">
+                <!-- Barra de navegación -->
+                <ul class="nav nav-tabs justify-content-center">
+                    <!-- Elementos de navegación -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">Depósito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Retiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Consultar saldo</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#" >Pago de servicios</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="transacciones.html" >Transacciones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row justify-content-center align-items-center" style="height: 40vh;">
+                <div class="col-8 justify-content-center">
+                    <div class="mb-3">
+                        <form action="" id="transacciones">
+                            <div class="mb-3 dashboard">
+                                <!-- Etiquetas y campos de entrada para el formulario de transacciones -->
+                                <label for="formGroupExampleInput2" required class="form-label fw-bold lblAct">Nota</label>
+                                <input type="text" min="1" class="form-control" id="nota">
+                                <label for="formGroupExampleInput2" required class="form-label fw-bold lblAct">Monto a depositar</label>
+                                <input type="number" min="1" class="form-control" id="monto">
+                                <!-- Botón para enviar el formulario de transacciones -->
+                                <button type="submit" id="enviar" onclick="transactControl()" class="btn btn-primary depositar mt-3 bg-success">Enter</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pie de página -->
+    <footer class="fixed-bottom bg-gray text-center fw-bold">
+        <div class="container p-3">
+            <span>Pokemon Bank. Todos los derechos reservados © 2023</span>
+        </div>
+    </footer>
+    <!-- Scripts JavaScript para la funcionalidad -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Biblioteca para alertas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script> <!-- Biblioteca para generar PDFs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script> <!-- Archivo JavaScript personalizado -->
+</body>
+</html>
